@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Produkty - lista</title>
+</head>
+<body>
+<div>
+    <h2>Produkty</h2>
+    <div th:each="product : ${products}">
+        <ul>
+            <li th:text="${product.toString()}"></li>
+        </ul>
+    </div>
+    <div>
+        <p>Suma:
+        <span th:text="${sum}"></span>
+        </p>
+    </div>
+</div>
+</body>
+</html>

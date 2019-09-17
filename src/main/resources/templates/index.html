@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Produkty</title>
+</head>
+<body>
+<h2>Dodaj produkt</h2>
+
+<form action="/add" method="post">
+    <input type="text" name="name" placeholder="Nazwa produktu">
+    <input type="text" name="price" placeholder="Cena"><br>
+    <label for="category">Wybierz kategorię</label><br>
+    <select name="category" id="category">
+        <option value="GROCERIES">art. spożywcze</option>
+        <option value="HOUSEHOLD_ITEMS">art. gosp. domowego</option>
+        <option value="OTHER">inne</option>
+    </select><br>
+    <input type="submit" value="Dodaj">
+</form>
+</body>
+</html>
