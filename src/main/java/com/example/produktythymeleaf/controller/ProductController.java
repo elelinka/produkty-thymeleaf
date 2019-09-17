@@ -64,15 +64,6 @@ public class ProductController {
         }
     }
 
-    private String convertToString(List<Product> products) {
-        String result = "";
-
-        for (Product product : products) {
-            result += product.toString() + "<br>";
-        }
-        return result;
-    }
-
     private boolean isParamsOk(String name, BigDecimal price, ProductCategory category) {
         return StringUtils.isEmpty(name) || StringUtils.isEmpty(price) || StringUtils.isEmpty(category);
     }
